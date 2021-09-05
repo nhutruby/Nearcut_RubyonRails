@@ -1,0 +1,4 @@
+document.getElementById("results").innerHTML = "";
+<% if @results %>
+document.querySelector('#results').insertAdjacentHTML('afterbegin', '<%= escape_javascript(render "users/result", object: @results) %>')
+<% end %>

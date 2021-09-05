@@ -44,6 +44,7 @@ module NearcutRubyonrails
       g.helper = false
       g.controller_specs = true
       g.models = true
+      g.requests = false
     end
   end
 end
