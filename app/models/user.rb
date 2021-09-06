@@ -10,6 +10,7 @@ class User
 
   # Validates
   validates :name, presence: true
+  validates :name, uniqueness: true
   validates :password, presence: true
   validates :password, length: {minimum: 10, maximum: 16}
   validates :password, format: {with: /\A(?=.*[a-z])(?=.*[A-Z])(?=.*\d)./,
